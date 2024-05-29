@@ -32,10 +32,10 @@ You may also see any lint errors in the console.
 ---
 
 Notes:
-    - The core functionality of the sidebar is present
-    - The submenu under 'create' is functional
-    - The icons are just placeholders for now, but could be easily adjusted to look better
-    - The pages for 'Bugs' and 'Epics' are implemented, going forward and backwards in the browser works
-    - The keyboard support works somewhat (press 's' to toggle keyboard mode), but is incomplete, I'm not as familiar with implementing that. With another 30 min I think I could have finished it. 
+- The core functionality of the sidebar is present
+- The submenu under 'create' is functional
+- The icons are just placeholders for now, but could be easily adjusted to look better
+- The pages for 'Bugs' and 'Epics' are implemented, going forward and backwards in the browser works
+- The keyboard support works somewhat (press 's' to toggle keyboard mode), but is incomplete, I'm not as familiar with implementing that. With another 30 min I think I could have finished it. 
 
 
