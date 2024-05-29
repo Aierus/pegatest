@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './sidebar.css';
 
-const Sidebar = () => {
+const Sidebar = ({navigate}) => {
   const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
   const toggleSubMenu = () => {
@@ -25,19 +25,22 @@ const Sidebar = () => {
           <ul>
             <li><div onClick={toggleSubMenu}><img src="icon.png" alt="icon" className="icon" /><span className="text">Create</span></div></li>
             {isSubMenuOpen && (
-              <ul className="submenu">
-                <li><a href="bug"><span className="text">Bug</span></a></li>
-                <li><a href="epic"><span className="text">Epic</span></a></li>
-                <li><a href="userstory"><span className="text">User Story</span></a></li>
-              </ul>
+              <>
+                <hr />
+                <ul className="submenu">
+                  <li><a href="bugs" onClick={() => navigate('/bugs')}><span className="text">Bug</span></a></li>
+                  <li><a href="epics" onClick={() => navigate('/epics')}><span className="text">Epic</span></a></li>
+                  <li><a href="userstory"><span className="text">User Story</span></a></li>
+                </ul>
+              </>
             )}
 
             <li><a href="home"><img src="icon.png" alt="icon" className="icon" /><span className="text">Home</span></a></li>
             <li><a href="dashboard"><img src="icon.png" alt="icon" className="icon" /><span className="text">My Dashboard</span></a></li>
             <li><a href="spaces"><img src="icon.png" alt="icon" className="icon" /><span className="text">Spaces</span></a></li>
             <li><a href="documents"><img src="icon.png" alt="icon" className="icon" /><span className="text">Documents</span></a></li>
-            <li><a href="bugs"><img src="icon.png" alt="icon" className="icon" /><span className="text">Bugs</span></a></li>
-            <li><a href="epics"><img src="icon.png" alt="icon" className="icon" /><span className="text">Epics</span></a></li>
+            <li><a href="bugs" onClick={() => navigate('/bugs')}><img src="icon.png" alt="icon" className="icon" /><span className="text">Bugs</span></a></li>
+            <li><a href="epics" onClick={() => navigate('/epics')}><img src="icon.png" alt="icon" className="icon" /><span className="text">Epics</span></a></li>
             <li><a href="goals"><img src="icon.png" alt="icon" className="icon" /><span className="text">Goals</span></a></li>
           </ul>
         </div>
