@@ -13,4 +13,29 @@ Some notes on the application:
 - Should try to make it as WCAG 2.1 compliant as much as possible including support for keyboard.
 - The focus of this assessment is on the main nav and the interaction – the content of the pages is not important.
 
+---
+
+To install the project, use 
+
+### git clone https://github.com/Aierus/pegatest
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+---
+
+Notes:
+    - The core functionality of the sidebar is present
+    - The submenu under 'create' is functional
+    - The icons are just placeholders for now, but could be easily adjusted to look better
+    - The pages for 'Bugs' and 'Epics' are implemented, going forward and backwards in the browser works
+    - The keyboard support works somewhat (press 's' to toggle keyboard mode), but is incomplete, I'm not as familiar with implementing that. With another 30 min I think I could have finished it. 
+
 
