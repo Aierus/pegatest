@@ -19,8 +19,9 @@ To install the project, use
 
 ### git clone https://github.com/Aierus/pegatest
 
-In the project directory, you can run:
+In the project directory (example-front-end), you can run:
 
+### `npm i` to install project dependencies
 ### `npm start`
 
 Runs the app in the development mode.\
