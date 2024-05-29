@@ -1,0 +1,152 @@
+.sidebar-container {
+  position: relative;
+}
+
+.sidebar {
+  width: 50px;
+  height: 100vh;
+  background-color: #333;
+  color: white;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar:hover {
+  width: 200px;
+}
+
+.sidebar-section {
+  padding: 10px;
+}
+
+.sidebar-section.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 30px;
+  height: 30px; 
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-bar {
+  width: 0;
+  padding: 5px 20px 5px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #555;
+  color: black;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  outline: none;
+}
+
+
+.sidebar:hover .search-bar {
+  width: 100%;
+  opacity: 1;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  pointer-events: none;
+ 
+}
+
+.sidebar-section.middle-section {
+  flex-grow: 1;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid lightgray;
+  margin: 0;
+}
+
+.sidebar ul hr {
+  border: 0;
+  border-top: 1px solid lightgray;
+  margin: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap; 
+  overflow: hidden;
+}
+
+.sidebar li a .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+ 
+}
+
+.sidebar li div {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap; 
+  overflow: hidden;
+}
+
+.sidebar ul li div .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.sidebar li a .text {
+  display: none;
+}
+
+.sidebar:hover li a .text {  
+  display: inline;
+}
+
+.sidebar li a:hover {
+  background-color: #444;
+}
+
+.sidebar-section.bottom-section {
+  margin-bottom: 10px;
+}
+
+.submenu {
+  padding-left: 20px;
+}
+
+.submenu li {
+  padding: 5px 0;
+}
