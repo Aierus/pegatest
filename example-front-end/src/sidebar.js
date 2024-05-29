@@ -13,10 +13,12 @@ const Sidebar = ({navigate}) => {
       <div className="sidebar">
         <div className="sidebar-section top-section">
           <ul>
-            <li><a href="create"><img src="icon.png" alt="icon" className="icon" /><span className="text">Demo</span></a></li>
+            <li><a href="demo"><img src="icon.png" alt="icon" className="icon" /><span className="text">Demo</span></a></li>
           </ul>
           <div className="search-wrapper">
-            <img src="icon.png" alt="Search" className="search-icon" />
+            <div className="search-icon-container">
+              <img src="searchicon.png" alt="Search" className="search-icon" />
+            </div>
             <input type="text" placeholder="Search" className="search-bar" />
           </div>
         </div>
